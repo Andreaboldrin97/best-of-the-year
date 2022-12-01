@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	
+	<body>
+	
+		<!-- stampa nel dom tramite Thymeleaf form -->
+		<h1 th:text="'Best of the year by ' + ${name}"></h1>
+		<!-- stampa neldom nella seconda forma-->
+		<h1>2Best of the year by [[${name}]] </h1>
+		
+	</body>
+</html>
