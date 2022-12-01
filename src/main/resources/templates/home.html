@@ -2,15 +2,20 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Insert title here</title>
+		<title>best-of-the-year</title>
+		<!--Link per css-->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		
 	</head>
 	
 	<body>
 	
 		<!-- stampa nel dom tramite Thymeleaf form -->
-		<h1 th:text="'Best of the year by ' + ${name}"></h1>
+		<h1 class="first_method" th:text="'Best of the year by ' + ${name}"></h1>
 		<!-- stampa neldom nella seconda forma-->
-		<h1>2Best of the year by [[${name}]] </h1>
+		<h1 class="second_method">2Best of the year by [[${name}]] </h1>
 		
+		<!--Link per js-->
+		<script type="text/javascript" src="js/script.js"></script>
 	</body>
 </html>
